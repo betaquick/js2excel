@@ -9,13 +9,13 @@
 // }
 
 class IWorkBook {	
-	public SheetNames: string[];
-	public Sheets: any;
+    public SheetNames: string[];
+    public Sheets: any;
 
-	constructor(public sheetNames: string[], public sheets: any) {
-		this.SheetNames = sheetNames;
-		this.Sheets = sheets;
-	}
+    constructor(public sheetNames: string[], public sheets: any) {
+        this.SheetNames = sheetNames;
+        this.Sheets = sheets;
+    }
 }
 
 export default IWorkBook;

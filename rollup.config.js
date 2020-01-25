@@ -4,7 +4,8 @@
 
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript';
+import ts from 'rollup-plugin-typescript';
+import typescript from 'typescript';
 import babel from 'rollup-plugin-babel';
 import builtins from 'rollup-plugin-node-builtins';
 
@@ -24,7 +25,9 @@ export default {
                 'node_modules/xlsx/xlsx.js': ['utils', 'write', 'read']
             }
         }),
-        typescript(),
+        ts({
+            typescript
+        }),
         babel({
             exclude: 'node_modules/**',
             externalHelpers: true
