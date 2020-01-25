@@ -1,6 +1,6 @@
 {
   "name": "@betaquick/json2excel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "BetaQuick LLC",
   "description": "Convert JSON to excel Binary",
   "license": "MIT",
