@@ -13,7 +13,14 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": true,
-    "allowUnusedLabels": true
+    "allowUnusedLabels": true,
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2015"
+    ]
   },
   "include": [
     "src/**/*.ts"
